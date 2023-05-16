@@ -1,0 +1,38 @@
+[
+ {
+  "InstFile" : "C:/Users/nguye/Documents/rmii/src/top.sv",
+  "InstLine" : 2,
+  "InstName" : "top",
+  "ModuleFile" : "C:/Users/nguye/Documents/rmii/src/top.sv",
+  "ModuleLine" : 2,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Users/nguye/Documents/rmii/src/top.sv",
+    "InstLine" : 27,
+    "InstName" : "ethernet_rx",
+    "ModuleFile" : "C:/Users/nguye/Documents/rmii/src/rmii_rx.sv",
+    "ModuleLine" : 1,
+    "ModuleName" : "rmii_rx",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/nguye/Documents/rmii/src/rmii_rx.sv",
+      "InstLine" : 21,
+      "InstName" : "fcs0",
+      "ModuleFile" : "C:/Users/nguye/Documents/rmii/src/crc32.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "crc32"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "InstFile" : "C:/Users/nguye/Documents/rmii/src/rmii_tx.sv",
+  "InstLine" : 2,
+  "InstName" : "rmii_tx",
+  "ModuleFile" : "C:/Users/nguye/Documents/rmii/src/rmii_tx.sv",
+  "ModuleLine" : 2,
+  "ModuleName" : "rmii_tx"
+ }
+]

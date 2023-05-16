@@ -1,0 +1,28 @@
+{
+ "Files" : [
+  {
+   "Path" : "C:/Users/nguye/Documents/rmii/src/top.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/nguye/Documents/rmii/src/rmii_rx.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/nguye/Documents/rmii/src/rmii_tx.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/nguye/Documents/rmii/src/crc32.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "C:/Users/nguye/Documents/rmii/impl/temp/rtl_parser.result",
+ "Top" : "top",
+ "VerilogStd" : "sysv",
+ "VhdlStd" : "vhdl_93"
+}
