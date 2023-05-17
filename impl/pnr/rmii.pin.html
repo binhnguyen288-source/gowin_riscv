@@ -50,15 +50,15 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Design File</td>
-<td>C:\Users\nguye\Documents\gowin_riscv\impl\gwsynthesis\rmii.vg</td>
+<td>C:\Users\nguye\Documents\GitHub\gowin_riscv\impl\gwsynthesis\rmii.vg</td>
 </tr>
 <tr>
 <td class="label">Physical Constraints File</td>
-<td>C:\Users\nguye\Documents\gowin_riscv\src\rmii.cst</td>
+<td>C:\Users\nguye\Documents\GitHub\gowin_riscv\src\rmii.cst</td>
 </tr>
 <tr>
 <td class="label">Timing Constraints File</td>
-<td>C:\Users\nguye\Documents\gowin_riscv\src\rmii.sdc</td>
+<td>C:\Users\nguye\Documents\GitHub\gowin_riscv\src\rmii.sdc</td>
 </tr>
 <tr>
 <td class="label">Version</td>
@@ -78,7 +78,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Tue May 16 22:23:04 2023
+<td>Wed May 17 16:07:15 2023
 </td>
 </tr>
 <tr>
@@ -132,7 +132,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>Y</td>
 <td>in</td>
 <td>IOR17[A]</td>
-<td>LVCMOS18</td>
+<td>LVCMOS33</td>
 <td>NA</td>
 <td>UP</td>
 <td>ON</td>
@@ -216,6 +216,24 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>3.3</td>
 </tr>
 <tr>
+<td class="label">uart_rx</td>
+<td></td>
+<td>18/2</td>
+<td>Y</td>
+<td>in</td>
+<td>IOB2[B]</td>
+<td>LVCMOS33</td>
+<td>NA</td>
+<td>UP</td>
+<td>ON</td>
+<td>NONE</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+<td>3.3</td>
+</tr>
+<tr>
 <td class="label">eth_txen</td>
 <td></td>
 <td>29/2</td>
@@ -258,6 +276,24 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>Y</td>
 <td>out</td>
 <td>IOB8[B]</td>
+<td>LVCMOS33</td>
+<td>8</td>
+<td>UP</td>
+<td>NA</td>
+<td>NA</td>
+<td>OFF</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+<td>3.3</td>
+</tr>
+<tr>
+<td class="label">uart_tx</td>
+<td></td>
+<td>17/2</td>
+<td>Y</td>
+<td>out</td>
+<td>IOB2[A]</td>
 <td>LVCMOS33</td>
 <td>8</td>
 <td>UP</td>
@@ -735,15 +771,15 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">17/2</td>
-<td>-</td>
-<td>in</td>
+<td>uart_tx</td>
+<td>out</td>
 <td>IOB2[A]</td>
-<td>LVCMOS18</td>
-<td>NA</td>
+<td>LVCMOS33</td>
+<td>8</td>
 <td>UP</td>
-<td>ON</td>
-<td>NONE</td>
 <td>NA</td>
+<td>NA</td>
+<td>OFF</td>
 <td>NA</td>
 <td>NA</td>
 <td>NA</td>
@@ -751,10 +787,10 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">18/2</td>
-<td>-</td>
+<td>uart_rx</td>
 <td>in</td>
 <td>IOB2[B]</td>
-<td>LVCMOS18</td>
+<td>LVCMOS33</td>
 <td>NA</td>
 <td>UP</td>
 <td>ON</td>
@@ -1458,7 +1494,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>osc</td>
 <td>in</td>
 <td>IOR17[A]</td>
-<td>LVCMOS18</td>
+<td>LVCMOS33</td>
 <td>NA</td>
 <td>UP</td>
 <td>ON</td>

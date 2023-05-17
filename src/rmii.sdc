@@ -23,3 +23,7 @@ set_output_delay -clock eth_clk -max 8.000 [get_ports {eth_tx[1]}]
 set_output_delay -clock eth_clk -min -3.000 [get_ports {eth_tx[1]}]
 set_output_delay -clock eth_clk -max 8.000 [get_ports {eth_txen}]
 set_output_delay -clock eth_clk -min -3.000 [get_ports {eth_txen}]
+
+
+set_false_path -to [get_ports {uart_tx}]
+set_false_path -from [get_ports {uart_rx}]

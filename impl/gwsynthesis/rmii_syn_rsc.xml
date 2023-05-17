@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="top" Register="7" Alu="5" Lut="7">
-    <SubModule name="ethernet_rx" Register="3" Lut="17">
-        <SubModule name="fcs0" Register="32" Lut="21"/>
+<Module name="top" Register="1" Lut="1">
+    <SubModule name="uart0">
+        <SubModule name="tx" Register="56" Alu="44" Lut="45" Bsram="1"/>
     </SubModule>
+    <SubModule name="ethernet_rx" Register="18" Lut="4"/>
 </Module>

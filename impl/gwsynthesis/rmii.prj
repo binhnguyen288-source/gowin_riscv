@@ -4,16 +4,18 @@
     <Version>beta</Version>
     <Device id="GW1NR-9C" package="QFN88P" speed="6" partNumber="GW1NR-LV9QN88PC6/I5"/>
     <FileList>
-        <File path="C:\Users\nguye\Documents\gowin_riscv\src\crc32.v" type="verilog"/>
-        <File path="C:\Users\nguye\Documents\gowin_riscv\src\rmii_rx.sv" type="verilog"/>
-        <File path="C:\Users\nguye\Documents\gowin_riscv\src\rmii_tx.sv" type="verilog"/>
-        <File path="C:\Users\nguye\Documents\gowin_riscv\src\top.sv" type="verilog"/>
+        <File path="C:\Users\nguye\Documents\GitHub\gowin_riscv\src\crc32.v" type="verilog"/>
+        <File path="C:\Users\nguye\Documents\GitHub\gowin_riscv\src\rmii_rx.sv" type="verilog"/>
+        <File path="C:\Users\nguye\Documents\GitHub\gowin_riscv\src\rmii_tx.sv" type="verilog"/>
+        <File path="C:\Users\nguye\Documents\GitHub\gowin_riscv\src\top.sv" type="verilog"/>
+        <File path="C:\Users\nguye\Documents\GitHub\gowin_riscv\src\uart.v" type="verilog"/>
+        <File path="C:\Users\nguye\Documents\GitHub\gowin_riscv\src\fifo_sc_hs\fifo_sc_2048x8.v" type="verilog"/>
     </FileList>
     <OptionList>
         <Option type="disable_insert_pad" value="0"/>
         <Option type="dsp_balance" value="0"/>
         <Option type="looplimit" value="2000"/>
-        <Option type="output_file" value="C:\Users\nguye\Documents\gowin_riscv\impl\gwsynthesis\rmii.vg"/>
+        <Option type="output_file" value="C:\Users\nguye\Documents\GitHub\gowin_riscv\impl\gwsynthesis\rmii.vg"/>
         <Option type="print_all_synthesis_warning" value="0"/>
         <Option type="ram_rw_check" value="1"/>
         <Option type="top_module" value="top"/>

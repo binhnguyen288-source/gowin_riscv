@@ -59,15 +59,15 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Design File</td>
-<td>C:\Users\nguye\Documents\gowin_riscv\impl\gwsynthesis\rmii.vg</td>
+<td>C:\Users\nguye\Documents\GitHub\gowin_riscv\impl\gwsynthesis\rmii.vg</td>
 </tr>
 <tr>
 <td class="label">Physical Constraints File</td>
-<td>C:\Users\nguye\Documents\gowin_riscv\src\rmii.cst</td>
+<td>C:\Users\nguye\Documents\GitHub\gowin_riscv\src\rmii.cst</td>
 </tr>
 <tr>
 <td class="label">Timing Constraints File</td>
-<td>C:\Users\nguye\Documents\gowin_riscv\src\rmii.sdc</td>
+<td>C:\Users\nguye\Documents\GitHub\gowin_riscv\src\rmii.sdc</td>
 </tr>
 <tr>
 <td class="label">Version</td>
@@ -87,7 +87,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Tue May 16 22:23:04 2023
+<td>Wed May 17 16:07:15 2023
 </td>
 </tr>
 <tr>
@@ -100,15 +100,15 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Total Power (mW)</td>
-<td>9.322</td>
+<td>11.177</td>
 </tr>
 <tr>
 <td class="label">Quiescent Power (mW)</td>
-<td>8.732</td>
+<td>8.780</td>
 </tr>
 <tr>
 <td class="label">Dynamic Power (mW)</td>
-<td>0.589</td>
+<td>2.397</td>
 </tr>
 <tr>
 <td class="label">Psram Power (mW)</td>
@@ -119,7 +119,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Junction Temperature</td>
-<td>25.204</td>
+<td>25.244</td>
 </tr>
 <tr>
 <td class="label">Theta JA</td>
@@ -127,7 +127,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Max Allowed Ambient Temperature</td>
-<td>84.796</td>
+<td>84.756</td>
 </tr>
 </table>
 <h2><a name="Configure_Info">Configure Information:</a></h2>
@@ -196,30 +196,30 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <tr>
 <td>VCC</td>
 <td>1.200</td>
-<td>0.104</td>
-<td>2.012</td>
-<td>2.539</td>
+<td>1.692</td>
+<td>2.022</td>
+<td>4.457</td>
 </tr>
 <tr>
 <td>VCCX</td>
 <td>2.500</td>
-<td>0.091</td>
+<td>0.064</td>
 <td>2.424</td>
-<td>6.289</td>
+<td>6.221</td>
 </tr>
 <tr>
 <td>VCCIO18</td>
 <td>1.800</td>
-<td>0.043</td>
+<td>0.004</td>
 <td>0.064</td>
-<td>0.193</td>
+<td>0.124</td>
 </tr>
 <tr>
 <td>VCCIO33</td>
 <td>3.300</td>
-<td>0.048</td>
-<td>0.043</td>
-<td>0.301</td>
+<td>0.060</td>
+<td>0.054</td>
+<td>0.375</td>
 </tr>
 </table>
 <h1><a name="Detail">Power Details</a></h1>
@@ -233,15 +233,21 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td>Logic</td>
-<td>0.013</td>
+<td>0.048</td>
 <td>NA</td>
 <td>6.250</td>
 </tr>
 <tr>
 <td>IO</td>
-<td>1.229
-<td>0.655
-<td>8.036
+<td>1.175
+<td>0.731
+<td>5.417
+</tr>
+<tr>
+<td>BSRAM</td>
+<td>1.902
+<td>NA</td>
+<td>NA</td>
 </tr>
 </table>
 <h2><a name="By_Hierarchy">Power By Hierarchy:</a></h2>
@@ -253,16 +259,28 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td>top</td>
-<td>0.013</td>
-<td>0.013(0.007)</td>
+<td>1.950</td>
+<td>1.950(1.950)</td>
 <tr>
 <td>top/ethernet_rx/</td>
-<td>0.007</td>
-<td>0.007(0.005)</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
 <tr>
-<td>top/ethernet_rx/fcs0/</td>
-<td>0.005</td>
-<td>0.005(0.000)</td>
+<td>top/uart0/</td>
+<td>1.948</td>
+<td>1.948(1.948)</td>
+<tr>
+<td>top/uart0/tx/</td>
+<td>1.948</td>
+<td>1.948(1.938)</td>
+<tr>
+<td>top/uart0/tx/tx_fifo/</td>
+<td>1.938</td>
+<td>1.938(1.938)</td>
+<tr>
+<td>top/uart0/tx/tx_fifo/fifo_sc_hs_inst/</td>
+<td>1.938</td>
+<td>1.938(0.000)</td>
 </table>
 <h2><a name="By_Clock_Domain">Power By Clock Domain:</a></h2>
 <table class="detail_table">
@@ -274,7 +292,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <tr>
 <td>eth_clk</td>
 <td>50.000</td>
-<td>0.015</td>
+<td>1.953</td>
 </tr>
 </table>
 </div><!-- content -->

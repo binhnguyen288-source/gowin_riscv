@@ -1,33 +1,79 @@
 [
  {
-  "InstFile" : "C:/Users/nguye/Documents/gowin_riscv/src/rmii_tx.sv",
+  "InstFile" : "C:/Users/nguye/Documents/GitHub/gowin_riscv/src/rmii_tx.sv",
   "InstLine" : 2,
   "InstName" : "rmii_tx",
-  "ModuleFile" : "C:/Users/nguye/Documents/gowin_riscv/src/rmii_tx.sv",
+  "ModuleFile" : "C:/Users/nguye/Documents/GitHub/gowin_riscv/src/rmii_tx.sv",
   "ModuleLine" : 2,
   "ModuleName" : "rmii_tx"
  },
  {
-  "InstFile" : "C:/Users/nguye/Documents/gowin_riscv/src/top.sv",
+  "InstFile" : "C:/Users/nguye/Documents/GitHub/gowin_riscv/src/top.sv",
   "InstLine" : 2,
   "InstName" : "top",
-  "ModuleFile" : "C:/Users/nguye/Documents/gowin_riscv/src/top.sv",
+  "ModuleFile" : "C:/Users/nguye/Documents/GitHub/gowin_riscv/src/top.sv",
   "ModuleLine" : 2,
   "ModuleName" : "top",
   "SubInsts" : [
    {
-    "InstFile" : "C:/Users/nguye/Documents/gowin_riscv/src/top.sv",
-    "InstLine" : 26,
+    "InstFile" : "C:/Users/nguye/Documents/GitHub/gowin_riscv/src/top.sv",
+    "InstLine" : 36,
+    "InstName" : "uart0",
+    "ModuleFile" : "C:/Users/nguye/Documents/GitHub/gowin_riscv/src/uart.v",
+    "ModuleLine" : 206,
+    "ModuleName" : "uart",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/nguye/Documents/GitHub/gowin_riscv/src/uart.v",
+      "InstLine" : 224,
+      "InstName" : "tx",
+      "ModuleFile" : "C:/Users/nguye/Documents/GitHub/gowin_riscv/src/uart.v",
+      "ModuleLine" : 108,
+      "ModuleName" : "UART_TX",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/nguye/Documents/GitHub/gowin_riscv/src/uart.v",
+        "InstLine" : 129,
+        "InstName" : "tx_fifo",
+        "ModuleFile" : "C:/Users/nguye/Documents/GitHub/gowin_riscv/src/fifo_sc_hs/fifo_sc_2048x8.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "FIFO_SC_2048x8"
+       }
+      ]
+     },
+     {
+      "InstFile" : "C:/Users/nguye/Documents/GitHub/gowin_riscv/src/uart.v",
+      "InstLine" : 228,
+      "InstName" : "rx",
+      "ModuleFile" : "C:/Users/nguye/Documents/GitHub/gowin_riscv/src/uart.v",
+      "ModuleLine" : 3,
+      "ModuleName" : "UART_RX",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/nguye/Documents/GitHub/gowin_riscv/src/uart.v",
+        "InstLine" : 95,
+        "InstName" : "rx_fifo",
+        "ModuleFile" : "C:/Users/nguye/Documents/GitHub/gowin_riscv/src/fifo_sc_hs/fifo_sc_2048x8.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "FIFO_SC_2048x8"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/nguye/Documents/GitHub/gowin_riscv/src/top.sv",
+    "InstLine" : 45,
     "InstName" : "ethernet_rx",
-    "ModuleFile" : "C:/Users/nguye/Documents/gowin_riscv/src/rmii_rx.sv",
+    "ModuleFile" : "C:/Users/nguye/Documents/GitHub/gowin_riscv/src/rmii_rx.sv",
     "ModuleLine" : 1,
     "ModuleName" : "rmii_rx",
     "SubInsts" : [
      {
-      "InstFile" : "C:/Users/nguye/Documents/gowin_riscv/src/rmii_rx.sv",
-      "InstLine" : 20,
+      "InstFile" : "C:/Users/nguye/Documents/GitHub/gowin_riscv/src/rmii_rx.sv",
+      "InstLine" : 39,
       "InstName" : "fcs0",
-      "ModuleFile" : "C:/Users/nguye/Documents/gowin_riscv/src/crc32.v",
+      "ModuleFile" : "C:/Users/nguye/Documents/GitHub/gowin_riscv/src/crc32.v",
       "ModuleLine" : 1,
       "ModuleName" : "crc32"
      }

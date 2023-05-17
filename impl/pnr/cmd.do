@@ -1,9 +1,9 @@
--d C:\Users\nguye\Documents\gowin_riscv\impl\gwsynthesis\rmii.vg
+-d C:\Users\nguye\Documents\GitHub\gowin_riscv\impl\gwsynthesis\rmii.vg
 -p GW1NR-9C-QFN88P-6
 -pn GW1NR-LV9QN88PC6/I5
--cst C:\Users\nguye\Documents\gowin_riscv\src\rmii.cst
--cfg C:\Users\nguye\Documents\gowin_riscv\impl\pnr\device.cfg
--sdc C:\Users\nguye\Documents\gowin_riscv\src\rmii.sdc
+-cst C:\Users\nguye\Documents\GitHub\gowin_riscv\src\rmii.cst
+-cfg C:\Users\nguye\Documents\GitHub\gowin_riscv\impl\pnr\device.cfg
+-sdc C:\Users\nguye\Documents\GitHub\gowin_riscv\src\rmii.sdc
 -bit
 -tr
 -ph
