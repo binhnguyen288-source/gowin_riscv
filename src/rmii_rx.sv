@@ -3,8 +3,7 @@ module rmii_rx(
     input eth_clk,
     input[1:0] eth_rx,
     input eth_dv,
-    output reg valid_data,
-    output[31:0] fcs_result
+    output reg valid_data
 );
     reg[3:0] byte_ringctr = 4'b1000;
     reg[7:0] byte_temp;
@@ -19,16 +18,12 @@ module rmii_rx(
     RMII_STATE rmii_state = RMII_PREAMBLE;
     wire[31:0] fcs_out;
     crc32 fcs0(.clk(eth_clk), .fcs_en(rmii_state == RMII_PAYLOAD), .data(eth_rx), .fcs_out(fcs_out));
-    reg[31:0] fcsResult = 0;
-    assign fcs_result = fcsResult;
+
     always @(posedge eth_clk)
-        if (rmii_state == RMII_PAYLOAD && ~eth_dv) begin
-            fcsResult <= fcs_out;
+        if (rmii_state == RMII_PAYLOAD && ~eth_dv && fcs_out == 32'h2144df1c)
             valid_data <= 1'b1;
-        end
-        else begin
+        else
             valid_data <= 1'b0;
-        end
     always @(posedge eth_clk)
         if (rst || ~eth_dv) begin
             byte_valid_q <= 1'b0;
@@ -79,16 +74,7 @@ module rmii_rx(
             RX_ERROR: rx_nextstate = eth_dv ? RX_ERROR : RX_MAC;
             default: rx_nextstate = RX_MAC;
         endcase
-    RX_STATE rxstate_prev;
-    always @(posedge eth_clk)
-        rxstate_prev <= rxstate;
-//    always @(posedge eth_clk)
-//        if (rst)
-//            valid_data <= 1'b0;
-//        else if (rxstate == RX_WAIT && rxstate_prev == RX_MAC)
-//            valid_data <= 1'b1;
-//        else
-//            valid_data <= 1'b0;
+    
     
     always @(posedge eth_clk) begin
         if (rst) begin

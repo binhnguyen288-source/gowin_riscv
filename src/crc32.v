@@ -4,8 +4,8 @@ module crc32(
     input [1:0] data,
     output [31:0] fcs_out
 );
-    
-    reg[31:0] crcIn = 32'hFFFF_FFFF;
+    parameter INIT_VALUE = 32'hFFFFFFFF;
+    reg[31:0] crcIn;
     wire[31:0] crcOut;    
 
     assign crcOut[0] = crcIn[2];
@@ -41,9 +41,9 @@ module crc32(
     assign crcOut[30] = crcIn[0] ^ crcIn[1] ^ data[0] ^ data[1];
     assign crcOut[31] = crcIn[1] ^ data[1];
 
-    assign fcs_out = ~crcOut;
+    assign fcs_out = ~crcIn;
     always @(posedge clk)
-        crcIn <= fcs_en ? crcOut : 32'hFFFF_FFFF;
+        crcIn <= fcs_en ? crcOut : INIT_VALUE;
         
     
 endmodule

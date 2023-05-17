@@ -1,19 +1,19 @@
 {
  "Files" : [
   {
-   "Path" : "C:/Users/nguye/Documents/rmii/src/top.sv",
+   "Path" : "C:/Users/nguye/Documents/gowin_riscv/src/crc32.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/nguye/Documents/rmii/src/rmii_rx.sv",
+   "Path" : "C:/Users/nguye/Documents/gowin_riscv/src/rmii_rx.sv",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/nguye/Documents/rmii/src/rmii_tx.sv",
+   "Path" : "C:/Users/nguye/Documents/gowin_riscv/src/rmii_tx.sv",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/nguye/Documents/rmii/src/crc32.v",
+   "Path" : "C:/Users/nguye/Documents/gowin_riscv/src/top.sv",
    "Type" : "verilog"
   }
  ],
@@ -21,7 +21,7 @@
 
  ],
  "LoopLimit" : 2000,
- "ResultFile" : "C:/Users/nguye/Documents/rmii/impl/temp/rtl_parser.result",
+ "ResultFile" : "C:/Users/nguye/Documents/gowin_riscv/impl/temp/rtl_parser.result",
  "Top" : "top",
  "VerilogStd" : "sysv",
  "VhdlStd" : "vhdl_93"
